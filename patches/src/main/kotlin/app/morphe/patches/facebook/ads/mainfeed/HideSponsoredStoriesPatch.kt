@@ -17,7 +17,7 @@ import com.android.tools.smali.dexlib2.immutable.ImmutableMethodParameter
 
 @Suppress("unused")
 val hideSponsoredStoriesPatch = bytecodePatch("Hide 'Sponsored Stories'") {
-    compatibleWith(AppCompatibilities.FACEBOOK_490)
+    compatibleWith(AppCompatibilities.FACEBOOK_FEED_ADS)
 
     execute {
         val sponsoredDataModelTemplateMethod = try {

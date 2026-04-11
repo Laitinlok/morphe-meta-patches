@@ -18,10 +18,10 @@ internal object AppCompatibilities {
         appIconColor = 0x0866FF,
     )
 
-    val FACEBOOK_490 = Compatibility(
+    val FACEBOOK_FEED_ADS = Compatibility(
         name = "Facebook",
         packageName = "com.facebook.katana",
         appIconColor = 0x0866FF,
-        targets = listOf(AppTarget("490.0.0.63.82")),
+        targets = listOf(AppTarget("490.0.0.63.82"), AppTarget("556.0.0.60.64")),
     )
 }
