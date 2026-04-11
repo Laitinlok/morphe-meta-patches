@@ -1,5 +1,5 @@
 {
-  "version": "1.0.2",
+  "version": "1.0.0",
   "appNames": {
     "com.facebook.katana": "Facebook"
   },
@@ -36,7 +36,9 @@
       "use": true,
       "dependencies": [],
       "compatiblePackages": {
-        "com.facebook.katana": null
+        "com.facebook.katana": [
+          "490.0.0.63.82"
+        ]
       },
       "compatibility": [
         {
@@ -46,7 +48,7 @@
           "appIconColor": 550655,
           "targets": [
             {
-              "version": "",
+              "version": "490.0.0.63.82",
               "experimental": false
             }
           ]
