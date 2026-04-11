@@ -20,7 +20,11 @@ val hideSponsoredStoriesPatch = bytecodePatch("Hide 'Sponsored Stories'") {
     compatibleWith(AppCompatibilities.FACEBOOK_490)
 
     execute {
-        val sponsoredDataModelTemplateMethod = GetSponsoredDataModelTemplateMethodFingerprint.method
+        val sponsoredDataModelTemplateMethod = try {
+            GetSponsoredDataModelTemplateMethodFingerprint.method
+        } catch (e: Exception) {
+            throw IllegalStateException("Failed to resolve fingerprint. Universal (non-split) Facebook APKs from APKMirror are not supported due to heavy Redex obfuscation. Please download the split APK bundle (.apkm) and merge it with AntiSplit-M, or patch the split bundle directly.", e)
+        }
         val baseModelMapperMethod = BaseModelMapperMethodFingerprint.method
         val baseModelWithTreeType = "Lcom/facebook/graphql/modelutil/BaseModelWithTree;"
         val graphQlStoryClassDescriptor = "Lcom/facebook/graphql/model/GraphQLStory;"
