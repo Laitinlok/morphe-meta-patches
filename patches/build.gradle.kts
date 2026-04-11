@@ -2,8 +2,8 @@ group = "app.morphe"
 
 patches {
     about {
-        name = "De-ReVanced Patches"
-        description = "ReVanced patches, ported for Morphe."
+        name = "morphe-meta-patches"
+        description = "A specialized collection of patches for the Facebook app, ported for Morphe."
         source = "https://github.com/RookieEnough/De-ReVanced"
         author = "De-ReVanced"
         contact = "na"
