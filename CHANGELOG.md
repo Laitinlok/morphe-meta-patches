@@ -1,3 +1,10 @@
+## [1.0.4](https://github.com/meridianfresco/morphe-meta-patches/compare/v1.0.3...v1.0.4) (2026-04-11)
+
+
+### Bug Fixes
+
+* explicitly reject non-split (Universal) APKs due to Redex obfuscation ([409371a](https://github.com/meridianfresco/morphe-meta-patches/commit/409371ae4e6f2764dca505ee540c6df5033fee26))
+
 ## [1.0.3](https://github.com/meridianfresco/morphe-meta-patches/compare/v1.0.2...v1.0.3) (2026-04-11)
 
 
