@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="./logo.png" width="300">
+</p>
+
 <div align="center">
 
 # Morphe-Meta-Patches
