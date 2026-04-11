@@ -9,6 +9,7 @@ import app.morphe.patcher.OpcodesFilter
 import app.morphe.patcher.patch.BytecodePatchContext
 import com.android.tools.smali.dexlib2.AccessFlags
 import com.android.tools.smali.dexlib2.Opcode
+import com.android.tools.smali.dexlib2.iface.instruction.formats.Instruction31i
 
 internal object BaseModelMapperMethodFingerprint : Fingerprint(
     accessFlags = listOf(AccessFlags.PUBLIC, AccessFlags.FINAL),
@@ -24,15 +25,27 @@ internal object BaseModelMapperMethodFingerprint : Fingerprint(
 )
 
 internal object GetSponsoredDataModelTemplateMethodFingerprint : Fingerprint(
-    definingClass = "GraphQLFBMultiAdsFeedUnit",
     accessFlags = listOf(AccessFlags.PUBLIC, AccessFlags.FINAL),
     returnType = "L",
+    parameters = emptyList(),
     filters = OpcodesFilter.opcodesToFilters(
         Opcode.CONST,
         Opcode.INVOKE_STATIC,
         Opcode.MOVE_RESULT_OBJECT,
         Opcode.RETURN_OBJECT,
     ),
+    custom = { method, classDef ->
+        // The sponsored data template method is very short (5-7 instructions)
+        // and contains exactly 2 large CONST (Instruction31i) values used as GraphQL type IDs.
+        val impl = method.implementation
+        if (impl == null) {
+            false
+        } else {
+            val instructions = impl.instructions.toList()
+            val constInstructions = instructions.filterIsInstance<Instruction31i>()
+            instructions.size in 4..10 && constInstructions.size == 2
+        }
+    },
 )
 
 internal object GetStoryVisibilityMethodMatchFingerprint : Fingerprint(

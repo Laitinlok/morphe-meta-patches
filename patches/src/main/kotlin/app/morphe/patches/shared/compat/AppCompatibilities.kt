@@ -16,12 +16,6 @@ internal object AppCompatibilities {
         name = "Facebook",
         packageName = "com.facebook.katana",
         appIconColor = 0x0866FF,
-    )
-
-    val FACEBOOK_490 = Compatibility(
-        name = "Facebook",
-        packageName = "com.facebook.katana",
-        appIconColor = 0x0866FF,
         targets = listOf(AppTarget("490.0.0.63.82")),
     )
 }

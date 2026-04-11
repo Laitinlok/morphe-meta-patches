@@ -16,8 +16,12 @@ val hideStoryAdsPatch = bytecodePatch(
     compatibleWith(AppCompatibilities.FACEBOOK)
 
     execute {
-        AdsInsertionMethodFingerprint.method.returnEarly()
-        FetchMoreAdsMethodFingerprint.method.returnEarly()
+        try {
+            AdsInsertionMethodFingerprint.method.returnEarly()
+            FetchMoreAdsMethodFingerprint.method.returnEarly()
+        } catch (e: Exception) {
+            throw IllegalStateException("Failed to resolve fingerprint. Universal (non-split) Facebook APKs from APKMirror are not supported due to heavy Redex obfuscation. Please download the split APK bundle (.apkm) and merge it with AntiSplit-M, or patch the split bundle directly.", e)
+        }
     }
 }
 
