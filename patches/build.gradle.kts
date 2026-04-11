@@ -4,10 +4,10 @@ patches {
     about {
         name = "morphe-meta-patches"
         description = "A specialized collection of patches for the Facebook app, ported for Morphe."
-        source = "https://github.com/RookieEnough/De-ReVanced"
-        author = "De-ReVanced"
+        source = "https://github.com/meridianfresco/morphe-meta-patches"
+        author = "meridianfresco"
         contact = "na"
-        website = "https://github.com/RookieEnough/De-ReVanced"
+        website = "https://github.com/meridianfresco/morphe-meta-patches"
         license = "GNU General Public License v3.0, with additional GPL section 7 requirements"
     }
 }

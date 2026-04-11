@@ -1,14 +1,8 @@
-<p align="center">
-  <img src="https://raw.githubusercontent.com/Peanut-Butter-bread/Idk/refs/heads/main/logo.png" width="200">
-</p>
-
 <div align="center">
 
 # Morphe-Meta-Patches
 
-### *"ReVanced calls forks unofficial while calling itself official—that's not open source, that's hypocrisy. This is the Morphe-Meta-Patches collection."*
-
-**A specialized collection of Meta app patches (Facebook, Instagram, Messenger), migrated to Morphe. Community-driven. GPL-compliant. No gatekeeping.**
+**A specialized collection of Android patches for Meta applications (Facebook, Instagram, and Messenger), built for the Morphe patcher ecosystem.**
 
 <br>
 
@@ -21,23 +15,17 @@
 
 </div>
 
-<p align="center">
-  <a href="https://www.buymeacoffee.com/rookiez" target="_blank">
-    <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" width="120" alt="Buy Me A Coffee">
-  </a>
-</p>
-
 ---
 
 ## About
 
-**Morphe-Meta-Patches** is a curated collection of patches for Meta apps that have been migrated from [ReVanced](https://github.com/ReVanced/revanced-patches) to [Morphe](https://morphe.software).
+**Morphe-Meta-Patches** provides high-quality, community-driven patches for Meta apps. These patches are ported and optimized for the [Morphe](https://morphe.software) patcher, ensuring a seamless and ad-free experience.
 
-### Why De-ReVanced?
+### Key Features
 
-- **ReVanced labels community forks as "unofficial"** while positioning itself as the official project—despite being a fork of Vanced. The hypocrisy is real: if forks are unofficial, so is ReVanced.
-- **Morphe** is built on transparency, proper GPL compliance, and community collaboration—without the gatekeeping.
-- **These patches** are the same functionality you know, adapted for Morphe's patcher ecosystem. No lock-in. No drama.
+- **Ad-blocking**: Removes sponsored stories and commercial interruptions.
+- **Privacy Enhancements**: Disables telemetry and tracking where possible.
+- **Feature Unlocks**: Re-enables hidden or restricted functionality.
 
 ---
 
