@@ -37,10 +37,14 @@ internal object GetSponsoredDataModelTemplateMethodFingerprint : Fingerprint(
     custom = { method, classDef ->
         // The sponsored data template method is very short (5-7 instructions)
         // and contains exactly 2 large CONST (Instruction31i) values used as GraphQL type IDs.
-        val impl = method.implementation ?: return@Fingerprint false
-        val instructions = impl.instructions.toList()
-        val constInstructions = instructions.filterIsInstance<Instruction31i>()
-        instructions.size in 4..10 && constInstructions.size == 2
+        val impl = method.implementation
+        if (impl == null) {
+            false
+        } else {
+            val instructions = impl.instructions.toList()
+            val constInstructions = instructions.filterIsInstance<Instruction31i>()
+            instructions.size in 4..10 && constInstructions.size == 2
+        }
     },
 )
 
