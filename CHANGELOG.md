@@ -1,3 +1,24 @@
+## [1.0.1](https://github.com/meridianfresco/morphe-meta-patches/compare/v1.0.0...v1.0.1) (2026-04-11)
+
+
+### Bug Fixes
+
+* Relax sponsored data fingerprint to match non-split APKs ([b585486](https://github.com/meridianfresco/morphe-meta-patches/commit/b585486635154de3267c3ca9cfdb83ef32b00ce7))
+
+
+
+
+
+### Bug Fixes
+
+* Fixed all issues related to Google Photos  ([58f8bc8](https://github.com/RookieEnough/De-ReVanced/commit/58f8bc80dfd601cfe5a5dfee81e64d78bab0f496))
+
+### Features
+
+* Added Messenger patches — disable typing indicator, hide inbox ads, hide inbox subtabs, hide Facebook button, remove Meta AI ([58f8bc8](https://github.com/RookieEnough/De-ReVanced/commit/58f8bc80dfd601cfe5a5dfee81e64d78bab0f496))
+* Added Inshorts patches — hide ads ([58f8bc8](https://github.com/RookieEnough/De-ReVanced/commit/58f8bc80dfd601cfe5a5dfee81e64d78bab0f496))
+* Added Amazon Shopping patches — always allow deep-linking ([58f8bc8](https://github.com/RookieEnough/De-ReVanced/commit/58f8bc80dfd601cfe5a5dfee81e64d78bab0f496))
+
 # 1.0.0 (2026-04-11)
 
 
