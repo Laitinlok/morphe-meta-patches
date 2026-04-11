@@ -1,5 +1,5 @@
 {
-  "version": "1.0.4",
+  "version": "1.0.0-dev.1",
   "appNames": {
     "com.facebook.katana": "Facebook"
   },
@@ -11,7 +11,8 @@
       "dependencies": [],
       "compatiblePackages": {
         "com.facebook.katana": [
-          "490.0.0.63.82"
+          "490.0.0.63.82",
+          "556.0.0.60.64"
         ]
       },
       "compatibility": [
@@ -23,6 +24,10 @@
           "targets": [
             {
               "version": "490.0.0.63.82",
+              "experimental": false
+            },
+            {
+              "version": "556.0.0.60.64",
               "experimental": false
             }
           ]
