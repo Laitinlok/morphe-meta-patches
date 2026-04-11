@@ -27,9 +27,7 @@ internal object GetSponsoredDataModelTemplateMethodFingerprint : Fingerprint(
     definingClass = "Lcom/facebook/graphql/model/GraphQLFBMultiAdsFeedUnit;",
     accessFlags = listOf(AccessFlags.PUBLIC, AccessFlags.FINAL),
     returnType = "L",
-    parameters = emptyList(),
     filters = OpcodesFilter.opcodesToFilters(
-        Opcode.CONST,
         Opcode.CONST,
         Opcode.INVOKE_STATIC,
         Opcode.MOVE_RESULT_OBJECT,
